@@ -1,17 +1,12 @@
 <footer class="site-footer">
-
   <div class="wrapper">
-
-    <h2 class="footer-heading">{{ site.title | escape }}</h2>
-
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li>{{ site.icp | escape }}</li>
-        </ul>
+    <div class="row">
+      <div class="col-md-2">
+        <a href="{{ site.baseurl }}/">
+          {{ site.title | escape }}
+        </a>
       </div>
-
-      <div class="footer-col footer-col-2">
+      <div class="col-md-8">
         <ul class="social-media-list">
           {% if site.github_username %}
           <li>
@@ -20,12 +15,11 @@
           {% endif %}
         </ul>
       </div>
-
-      <div class="footer-col footer-col-3">
-        <p><a href="#">返回顶部</a></p>
+      <div class="col-md-2">
+        <a class="pull-right" href="#">
+          返回顶部
+        </a>
       </div>
     </div>
-
   </div>
-
 </footer>
